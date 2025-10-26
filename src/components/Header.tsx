@@ -2,6 +2,13 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
+const navigation = [
+  { name: "Home", href: "#" },
+  { name: "Benefícios", href: "#beneficios" },
+  { name: "Meus documentos", href: "#documentos" },
+  { name: "Ajuda", href: "#ajuda" },
+];
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
