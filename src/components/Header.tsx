@@ -5,13 +5,6 @@ import { useState } from "react";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const navigation = [
-    { name: "Home", href: "#" },
-    { name: "Benefícios", href: "#" },
-    { name: "Meus documentos", href: "#" },
-    { name: "Ajuda", href: "#" },
-  ];
-
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
