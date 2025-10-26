@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { Icon } from "leaflet";
 import "leaflet/dist/leaflet.css";
@@ -15,16 +14,6 @@ const DefaultIcon = new Icon({
 });
 
 const MapView = () => {
-  useEffect(() => {
-    // Set default icon for all markers
-    const L = require("leaflet");
-    delete L.Icon.Default.prototype._getIconUrl;
-    L.Icon.Default.mergeOptions({
-      iconRetinaUrl: icon,
-      iconUrl: icon,
-      shadowUrl: iconShadow,
-    });
-  }, []);
 
   // CRAS locations - posição inicial em São Paulo
   const crasLocations = [
