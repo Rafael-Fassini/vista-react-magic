@@ -4,16 +4,12 @@ import MapView from "@/components/MapView";
 import LocationCard from "@/components/LocationCard";
 import LocationList from "@/components/LocationList";
 import Footer from "@/components/Footer";
-import OnboardingProgresso from "@/components/OnboardingProgresso";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <main>
         <HeroSection />
-        <div className="container mx-auto px-4 mb-8">
-          <OnboardingProgresso />
-        </div>
         <SearchBar />
         <MapView />
         <LocationCard
